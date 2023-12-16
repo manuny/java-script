@@ -32,5 +32,5 @@ let scr = "script";
 console.log(jav + scr);
 let hello = "hello";
 let world = "world";
-let helloword = hello + world;
+let helloword = hello + " " + world;
 console.log(helloword);
