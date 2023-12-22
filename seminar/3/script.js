@@ -52,7 +52,7 @@ func(2);
 func(3);
 func();*/
 
-let num1 = Number(prompt("Введите 1 число   "));
+/*let num1 = Number(prompt("Введите 1 число   "));
 let num2 = Number(prompt("Введите 2 число   "));
 let num3 = Number(prompt("Введите 3 число   "));
 function sum(num1, num2, num3) {
@@ -69,4 +69,31 @@ function func(num = 5) {
 }
 func(2);
 func(3);
-func();
+func();*/
+
+/*Задание 3 (тайминг 15 минут)
+1. Сделайте функцию, которая параметром принимает число, а
+возвращает квадратный корень из этого числа. С помощью этой
+функции найдите корень числа 3, затем найдите корень числа 4.
+Просуммируйте полученные результаты и выведите их в консоль.
+2. Создайте функцию, которая находит минимальное число из 2х
+передаваемых аргументов функции*/
+
+let number = Number(prompt("Введите число   "));
+function root(number) {
+  return Math.sqrt(number);
+}
+root(number);
+let num1 = root(3);
+let num2 = root(4);
+console.log(Number(num1 + num2));
+
+let number2 = Number(prompt("Введите 2 число  "));
+function sravn(number, number2) {
+  if (number > number2) {
+    console.log(number2);
+  } else {
+    console.log(number);
+  }
+}
+sravn(number, number2);
