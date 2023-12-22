@@ -79,7 +79,7 @@ func();*/
 2. Создайте функцию, которая находит минимальное число из 2х
 передаваемых аргументов функции*/
 
-let number = Number(prompt("Введите число   "));
+/*let number = Number(prompt("Введите число   "));
 function root(number) {
   return Math.sqrt(number);
 }
@@ -96,4 +96,57 @@ function sravn(number, number2) {
     console.log(number);
   }
 }
-sravn(number, number2);
+sravn(number, number2);*/
+
+/*Задание 4 (тайминг 25 минут)
+1. Сделайте функцию, которая принимает параметром число от 1 до 7,
+а возвращает день недели на русском языке.
+2. Написать функцию, которой передаем имя и она возвращает
+приветствие в зависимости от времени суток (Доброе
+утро\день\вечер\ночи Иван)*/
+
+let number = Number(prompt("Введите число от 1 до 7   "));
+function week(number) {
+  if (number >= 1 && number <= 7) {
+    if (number == 1) {
+      alert("Понедельник");
+    }
+
+    if (number == 2) {
+      alert("Вторник");
+    }
+
+    if (number == 3) {
+      alert("Среда");
+    }
+    if (number == 4) {
+      alert("Четверг");
+    }
+    if (number == 5) {
+      alert("Пятница");
+    }
+    if (number == 6) {
+      alert("Суббота");
+    }
+    if (number == 7) {
+      alert("Воскресенье");
+    }
+  } else {
+    alert("Попробуйте еще раз...");
+  }
+}
+week(number);
+
+let time1 = new Date("December 22, 2023 22:24:00 +0300");
+function setTime(name, time) {
+  if (12 > time && time >= 4) {
+    console.log(`Доброе утро ${name}`);
+  } else if (20 > time && time >= 12) {
+    console.log(`Добрый день ${name}`);
+  } else if (23 > time && time >= 20) {
+    console.log(`Добрый вечер ${name}`);
+  } else {
+    console.log(`Доброй ночи ${name}`);
+  }
+}
+setTime("Мария", time1.getHours());
