@@ -10,8 +10,24 @@
 число и проверяет, положительное это число или
 отрицательное. В первом случае пусть функция выводит
 в консоль текст '+++', а во втором '---'.*/
-
+//1
 function userData(name, lastName, age) {
   alert(`Привет ${lastName} ${name} твой возраст ${age}`);
 }
 userData("Петр", "Петров", 35);
+//2
+let number = prompt("Введите число   ");
+function square(number) {
+  alert(`Квадрат ${number} равен ${number * number}`);
+}
+square(number);
+//3
+let num = prompt("Введите число   ");
+function sravneniye(num) {
+  if (num < 0) {
+    console.log("------");
+  } else {
+    console.log("++++++");
+  }
+}
+sravneniye(num);
