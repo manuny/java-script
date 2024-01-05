@@ -1,22 +1,24 @@
-/*Задание 3
-Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach.*/
-
-const products = [
-  {
-    id: 3,
-    price: 200,
-  },
-  {
-    id: 4,
-    price: 900,
-  },
-  {
-    id: 1,
-    price: 1000,
-  },
+/* Дано 2 массива 
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+```
+Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.*/
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = [
+  "понедельник",
+  "вторник",
+  "среда",
+  "четверг",
+  "пятница",
+  "суббота",
+  "воскресенье",
 ];
-
-products.forEach((element) => {
-  element.price -= element.price * (15 / 100);
-});
-console.log(products);
+const weekdayObj = {};
+if (en.length !== ru.length) {
+  console.log("Разная длинна массивов");
+} else {
+  for (let i = 0; i < en.length; i++) {
+    weekdayObj[en[i]] = ru[i];
+  }
+}
+console.log(weekdayObj);
